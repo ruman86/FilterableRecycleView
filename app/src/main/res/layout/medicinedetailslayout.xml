@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/tvMName"
+        android:padding="5dp"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Medicine Name: "
+        android:textSize="12dp"
+        />
+    <TextView
+        android:id="@+id/textViewPower"
+        android:padding="5dp"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Napa"
+        android:layout_toRightOf="@+id/tvMName"
+        android:textSize="12dp"
+        />
+
+    <TextView
+        android:id="@+id/tvGrpName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dp"
+        android:text="Group Name:"
+        android:layout_below="@id/tvMName"
+        android:layout_gravity="left"
+        android:textSize="12dp"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+    <TextView
+        android:id="@+id/tvGroupName"
+        android:padding="3dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tvGrpName"
+        android:layout_below="@id/tvMName"
+        android:text="Beximco Company"
+        android:layout_gravity="right"
+        android:textSize="12dp"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+    <TextView
+        android:id="@+id/tvIndcation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvGrpName"
+        android:layout_gravity="left"
+        android:layout_marginTop="2dp"
+        android:padding="3dp"
+        android:text="Indication Name: "
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:textSize="12dp" />
+    <TextView
+        android:id="@+id/tvIndication"
+        android:padding="3dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tvIndcation"
+        android:layout_below="@id/tvGroupName"
+        android:text="Beximco Company"
+        android:layout_gravity="right"
+        android:textSize="12dp"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+    <TextView
+        android:id="@+id/tvDoses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvIndcation"
+        android:layout_gravity="left"
+        android:layout_marginTop="2dp"
+        android:padding="3dp"
+        android:text="Indication Name: "
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:textSize="12dp" />
+    <TextView
+        android:id="@+id/tvDosesDetails"
+        android:padding="3dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tvDoses"
+        android:layout_below="@id/tvIndcation"
+        android:text="Beximco Company"
+        android:layout_gravity="right"
+        android:textSize="12dp"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+    <TextView
+        android:id="@+id/tvSideEffect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvDoses"
+        android:layout_gravity="left"
+        android:layout_marginTop="2dp"
+        android:padding="3dp"
+        android:text="Indication Name: "
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:textSize="12dp" />
+    <TextView
+        android:id="@+id/tvSideEffectDetails"
+        android:padding="3dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tvSideEffect"
+        android:layout_below="@id/tvDosesDetails"
+        android:text="Beximco Company"
+        android:layout_gravity="right"
+        android:textSize="12dp"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+
+    <TextView
+        android:id="@+id/tvPreglac"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvSideEffect"
+        android:layout_gravity="left"
+        android:layout_marginTop="2dp"
+        android:padding="3dp"
+        android:text="Indication Name: "
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:textSize="12dp" />
+    <TextView
+        android:id="@+id/tvPreglacDetails"
+        android:padding="3dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tvPreglac"
+        android:layout_below="@id/tvSideEffectDetails"
+        android:text="Beximco Company"
+        android:layout_gravity="right"
+        android:textSize="12dp"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+</RelativeLayout>

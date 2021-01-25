@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:andorid="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="left"
+            >
+        <TextView
+            android:id="@+id/textViewName"
+            android:padding="5dp"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Napa"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            />
+            <TextView
+                android:id="@+id/textViewPower"
+                android:padding="5dp"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Napa"
+                android:layout_toRightOf="@+id/textViewName"
+                android:textSize="11sp"
+                />
+
+            <TextView
+                android:id="@+id/textViewCompanyname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:text="Company Name:"
+                android:layout_below="@id/textViewName"
+                android:layout_gravity="left"
+                android:textSize="12dp"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+            <TextView
+                android:id="@+id/textViewCompany"
+                android:padding="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/textViewCompanyname"
+                android:layout_below="@id/textViewName"
+                android:text="Beximco Company"
+                android:layout_gravity="right"
+                android:textSize="12dp"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+            <TextView
+                android:id="@+id/textViewPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewCompanyname"
+                android:layout_gravity="left"
+                android:layout_marginTop="2dp"
+                android:padding="3dp"
+                android:text="12TK"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:textSize="12dp" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

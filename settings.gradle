@@ -1,0 +1,3 @@
+include ':aamarpay_sdk-v-4.1.0'
+include ':app'
+rootProject.name='FilterableRecycleView'

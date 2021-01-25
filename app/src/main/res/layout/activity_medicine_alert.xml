@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MedicineAlertActivity"
+    android:background="#EFF0F1"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/medInstructioncard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="5dp"
+        android:layout_marginTop="5dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/medicineNameId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Medicine Name">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/medInstruction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Instrunction">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/medInstructioncard2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/medInstructioncard"
+        android:layout_marginTop="5dp"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="5dp"
+        android:padding="10dp"
+        >
+
+        <LinearLayout
+            android:id="@+id/intructiononeId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/medInstructioncard"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            >
+
+            <RadioGroup
+                android:id="@+id/radioMealtime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioBeforeMeal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Before Meal"
+                    android:checked="true" />
+
+                <RadioButton
+                    android:id="@+id/radioAfterMeal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="After Meal" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/instructionTwoId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/intructiononeId"
+            android:layout_marginTop="40dp"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <CheckBox
+                android:id="@+id/cbBreakFast"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:gravity="left"
+                android:text="Morning" />
+
+            <CheckBox
+                android:id="@+id/cbLaunch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/cbBreakFast"
+                android:layout_alignParentLeft="true"
+                android:gravity="left|center"
+                android:text="Launch" />
+
+            <CheckBox
+                android:id="@+id/cbDinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/BrandNameId"
+                android:layout_alignLeft="@+id/cbBreakFast"
+                android:layout_alignParentLeft="true"
+                android:gravity="left|center"
+                android:text="Dinner" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+    <TextView
+        android:id="@+id/customizeTimeID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/medInstructioncard2"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:text="@string/Customize_Time"
+        android:textColor="#fff"
+        android:textSize="14dp"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/instructionThreeId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/customizeTimeID"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="left"
+            android:entries="@array/hours_arrays"
+            android:prompt="@string/set_hour_prompt" />
+
+        <Spinner
+            android:id="@+id/spinner2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/minute_arrays"
+            android:prompt="@string/set_minute_prompt" />
+
+        <Spinner
+            android:id="@+id/spinner3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/time_arrays"
+            android:prompt="@string/set_time" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/instructionThreeId"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:id="@+id/btnSaveAlart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save Alert"/>
+    </LinearLayout>
+</RelativeLayout>
